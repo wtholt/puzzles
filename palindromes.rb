@@ -1,6 +1,6 @@
 require 'date'
 now = Date.today
-dates = (now<<60..now).map{ |day| day.strftime("%-m%-d%Y")}
+dates = (now<<120..now).map{ |day| day.strftime("%-m%-d%Y")}
   
 def palindrome?(dates)
   dates.each do |date|
